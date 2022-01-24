@@ -1,0 +1,9 @@
+<div class="main-container">
+    {{#each data}}
+    <div class="main-content-small" style="background-image: url('{{this.attributes.image.url}}');">
+        <a title="{{this.attributes.title}}" href="./movies/{{this.id}}">
+            {{this.attributes.title}}
+        </a>
+    </div>
+    {{/each}}
+</div>
